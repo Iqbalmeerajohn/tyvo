@@ -429,7 +429,7 @@ footer a{color:var(--muted)}
     const btn = f.querySelector('button'); btn.disabled = true; btn.textContent = 'Sending...';
     try {
       if (!C.EMAIL) throw new Error('no-endpoint');
-      const r = await fetch(`https://formsubmit.co/ajax/${C.EMAIL}`, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ ...d, _subject: `Tyvo waitlist: ${d.type}` }) });
+      const r = await fetch(`https://formsubmit.co/ajax/${C.FORM_ID || C.EMAIL}`, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ ...d, _subject: `Tyvo waitlist: ${d.type}` }) });
       if (!r.ok) throw new Error('send');
       f.reset(); msg.textContent = "You're on the list. We'll message you the day the founding batch opens.";
     } catch (e) {
