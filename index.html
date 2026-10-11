@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tyvo | Grip socks that stay grippy</title>
+<meta name="description" content="Pilates grip socks built to keep their grip, with a 90-day Grip Guarantee. Plus custom-branded grip socks for studios across India.">
+<meta property="og:title" content="Tyvo | Grip socks that stay grippy">
+<meta property="og:description" content="Pilates grip socks with a 90-day Grip Guarantee. Founding batch now taking sign-ups.">
+<meta property="og:image" content="https://images.pexels.com/photos/33360042/pexels-photo-33360042/free-photo-of-woman-practicing-pilates-on-reformer-machine.jpeg?auto=compress&w=1200">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23E2432A'/><circle cx='11' cy='12' r='3' fill='white'/><circle cx='21' cy='12' r='3' fill='white'/><circle cx='16' cy='21' r='3' fill='white'/></svg>">
+<style>
+:root{
+  --bg:#f2f3f0; --surface:#ffffff; --ink:#141516; --muted:#575b5f; --line:#d9dbd6;
+  --accent:#e2432a; --accent-ink:#ffffff; --accent-soft:#fbe3dd;
+  --chalk:#ecebe6; --sage:#a9b8a0; --mocha:#8a6f5c; --blush:#e9b9b5; --black:#222324;
+  --r:14px; --shadow:0 18px 50px rgb(40 44 38 / .10);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121314; --surface:#1b1c1e; --ink:#eeefea; --muted:#a6aaa4; --line:#2e3033;
+    --accent:#ff5a3d; --accent-ink:#160704; --accent-soft:#3a1d17; --shadow:0 18px 50px rgb(0 0 0 / .45);
+  }
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Satoshi,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Cabinet Grotesk",Satoshi,sans-serif;letter-spacing:-.025em;line-height:1.02}
+h2{font-size:clamp(2rem,4.2vw,3.4rem);font-weight:800}
+p.lead{color:var(--muted);max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font:700 1rem/1 Satoshi,sans-serif;padding:1rem 1.4rem;border-radius:999px;border:1.5px solid var(--ink);text-decoration:none;cursor:pointer;white-space:nowrap;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s,color .2s}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--bg)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:800 1.55rem/1 "Cabinet Grotesk",sans-serif;letter-spacing:-.04em;text-decoration:none;display:flex;align-items:center;gap:.45rem}
+.logo i{color:var(--accent);font-size:1.4rem}
+nav ul{display:flex;gap:2rem;list-style:none;padding:0}
+nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+nav ul a:hover{color:var(--ink)}
+nav .btn{padding:.7rem 1.1rem;font-size:.92rem}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:64px 0 72px;min-height:calc(100dvh - 68px)}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.6rem);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{font-size:1.2rem;margin:1.4rem 0 2rem}
+.hero .ctas{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow)}
+.hero figure img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:18px;bottom:18px;background:var(--surface);color:var(--ink);border-radius:999px;padding:.6rem 1rem;font-weight:700;font-size:.92rem;display:flex;gap:.5rem;align-items:center;box-shadow:var(--shadow)}
+.badge i{color:var(--accent)}
+
+/* problem */
+.problem{padding:110px 0;border-top:1px solid var(--line)}
+.problem h2{max-width:16ch}
+.quotes{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;margin-top:56px}
+.quotes blockquote{background:var(--surface);border-radius:var(--r);padding:28px;font:500 1.3rem/1.35 "Cabinet Grotesk",sans-serif;letter-spacing:-.01em}
+.quotes blockquote:nth-child(1){grid-column:1/8}
+.quotes blockquote:nth-child(2){grid-column:8/13;background:var(--ink);color:var(--bg)}
+.quotes blockquote:nth-child(3){grid-column:3/10}
+.quotes cite{display:block;margin-top:14px;font:500 .85rem/1.4 Satoshi,sans-serif;color:var(--muted);font-style:normal}
+.quotes blockquote:nth-child(2) cite{color:color-mix(in srgb,var(--bg) 70%,transparent)}
+.problem .note{margin-top:28px;color:var(--muted);font-size:.95rem}
+
+/* bento */
+.sock{padding:110px 0}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(220px,auto);gap:18px;margin-top:48px}
+.cell{border-radius:var(--r);padding:28px;background:var(--surface);display:flex;flex-direction:column;justify-content:flex-end;gap:.4rem;position:relative;overflow:hidden}
+.cell i.ph{font-size:2rem;color:var(--accent);margin-bottom:auto}
+.cell h3{font-size:1.5rem;font-weight:700}
+.cell p{color:var(--muted);max-width:42ch}
+.c1{grid-column:span 4;grid-row:span 2;background:var(--accent);color:var(--accent-ink)}
+.c1 h3{font-size:clamp(1.8rem,3vw,2.6rem)}
+.c1 p{color:color-mix(in srgb,var(--accent-ink) 82%,transparent);font-size:1.1rem}
+.c1 i.ph{color:var(--accent-ink);font-size:2.6rem}
+.c2{grid-column:span 2}
+.c3{grid-column:span 2;padding:0}
+.c3 img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.c4{grid-column:span 3}
+.c5{grid-column:span 3}
+.swatches{display:flex;gap:10px;margin-bottom:auto;flex-wrap:wrap}
+.swatches button{width:46px;height:46px;border-radius:999px;border:2px solid var(--line);cursor:pointer;transition:transform .2s cubic-bezier(.16,1,.3,1)}
+.swatches button:hover,.swatches button[aria-pressed="true"]{transform:scale(1.12);border-color:var(--ink)}
+.swatch-name{font-weight:700}
+
+/* guarantee */
+.guarantee{background:var(--ink);color:var(--bg);padding:110px 0}
+.guarantee .wrap{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.big90{font:800 clamp(7rem,18vw,15rem)/.8 "Cabinet Grotesk",sans-serif;letter-spacing:-.06em;color:var(--accent)}
+.guarantee h2{max-width:18ch}
+.guarantee p{color:color-mix(in srgb,var(--bg) 72%,transparent);margin-top:1.2rem;max-width:56ch}
+
+/* size + pricing */
+.buy{padding:110px 0}
+.buy-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start;margin-top:48px}
+.sizer{background:var(--surface);border-radius:var(--r);padding:32px}
+.sizer h3{font-size:1.6rem}
+label{display:block;font-weight:700;font-size:.95rem;margin:1.2rem 0 .45rem}
+input,select{width:100%;font:500 1rem Satoshi,sans-serif;padding:.9rem 1rem;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
+input:focus,select:focus{outline:3px solid color-mix(in srgb,var(--accent) 45%,transparent);border-color:var(--accent)}
+.help{font-size:.85rem;color:var(--muted);margin-top:.35rem}
+.result{margin-top:1.4rem;font:800 3.4rem/1 "Cabinet Grotesk",sans-serif;min-height:3.4rem}
+.result small{display:block;font:500 .95rem Satoshi,sans-serif;color:var(--muted);margin-top:.4rem}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.plan{border:1.5px solid var(--line);border-radius:var(--r);padding:26px;background:var(--surface)}
+.plan.main{grid-column:1/-1;border-color:var(--accent);display:grid;grid-template-columns:1fr auto;align-items:end;gap:12px}
+.plan h3{font-size:1.25rem}
+.price{font:800 2.4rem/1 "Cabinet Grotesk",sans-serif;margin-top:.6rem}
+.plan.main .price{font-size:3.4rem}
+.plan p{color:var(--muted);font-size:.95rem;margin-top:.3rem}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.8rem;padding:.3rem .7rem;border-radius:999px;margin-bottom:.6rem}
+
+/* studios */
+.studios{padding:110px 0;border-top:1px solid var(--line)}
+.studios .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.studios figure{border-radius:var(--r);overflow:hidden;aspect-ratio:5/4}
+.studios figure img{width:100%;height:100%;object-fit:cover}
+.nums{display:grid;grid-template-columns:repeat(3,auto);gap:28px;margin:2rem 0}
+.nums strong{display:block;font:800 2.2rem/1 "Cabinet Grotesk",sans-serif}
+.nums span{color:var(--muted);font-size:.9rem}
+
+/* waitlist */
+.join{padding:110px 0}
+.join-box{background:var(--surface);border-radius:var(--r);padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:1fr 1fr;gap:48px;box-shadow:var(--shadow)}
+.join form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.join form .btn{margin-top:1.4rem;width:100%;justify-content:center}
+.msg{margin-top:1rem;font-weight:700;min-height:1.6em}
+.msg.err{color:var(--accent)}
+
+/* faq */
+.faq{padding:0 0 110px}
+.faq .wrap{max-width:860px}
+details{border-bottom:1px solid var(--line);padding:1.3rem 0}
+summary{cursor:pointer;font:700 1.2rem "Cabinet Grotesk",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary i{transition:transform .25s cubic-bezier(.16,1,.3,1);color:var(--accent)}
+details[open] summary i{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:.7rem;max-width:65ch}
+
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+
+/* reveal */
+@media (prefers-reduced-motion: no-preference){
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+  .hero-in>*{animation:rise .8s cubic-bezier(.16,1,.3,1) both}
+  .hero-in>*:nth-child(2){animation-delay:.08s}.hero-in>*:nth-child(3){animation-delay:.16s}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+}
+
+/* mobile */
+@media (max-width:900px){
+  nav ul{display:none}
+  .hero,.guarantee .wrap,.buy-grid,.studios .wrap,.join-box{grid-template-columns:1fr}
+  .hero{min-height:auto;padding:40px 0 56px;gap:36px}
+  .hero figure{aspect-ratio:4/3}
+  .quotes blockquote{grid-column:1/-1!important}
+  .bento{grid-template-columns:1fr}
+  .c1,.c2,.c3,.c4,.c5{grid-column:auto;grid-row:auto}
+  .c3{min-height:260px}
+  .problem,.sock,.guarantee,.buy,.studios,.join{padding:72px 0}
+  .guarantee .wrap{gap:20px}
+  .nums{grid-template-columns:1fr 1fr 1fr;gap:16px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  nav .btn{display:none}
+  .plans,.join form .row{grid-template-columns:1fr}
+  .plan.main{grid-template-columns:1fr}
+  .nums strong{font-size:1.6rem}
+  footer .wrap{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><i class="ph-fill ph-dots-three-circle"></i>tyvo</a>
+    <ul>
+      <li><a href="#sock">The sock</a></li>
+      <li><a href="#buy">Sizes &amp; prices</a></li>
+      <li><a href="#studios">For studios</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#join">Join the founding batch</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="wrap hero">
+  <div class="hero-in">
+    <h1>Grip socks that <em>stay</em> grippy.</h1>
+    <p class="lead">Built for reformer Pilates, barre and yoga. Grip inside and out, real sizes, and a 90-day Grip Guarantee.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#join">Join the founding batch <i class="ph-bold ph-arrow-right"></i></a>
+      <a class="btn btn-ghost" href="#studios">For studios</a>
+    </div>
+  </div>
+  <figure>
+    <img src="https://images.pexels.com/photos/33360042/pexels-photo-33360042/free-photo-of-woman-practicing-pilates-on-reformer-machine.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="A woman training on a Pilates reformer in a bright studio" fetchpriority="high" width="1100" height="1375">
+    <span class="badge"><i class="ph-fill ph-shield-check"></i>90-day Grip Guarantee</span>
+  </figure>
+</section>
+
+<section class="problem">
+  <div class="wrap">
+    <h2 class="reveal">Most grip socks quit before you do.</h2>
+    <div class="quotes">
+      <blockquote class="reveal">"I wore them to Pilates 3 times a week and they had holes in the second month."<cite>Verified buyer review, Amazon.in</cite></blockquote>
+      <blockquote class="reveal">"The grip doesn't last for about a month."<cite>Verified buyer review, Amazon.in</cite></blockquote>
+      <blockquote class="reveal">"It really doesn't give any grip and comes off your toes. The fabric is too thin."<cite>Verified buyer review, Amazon.in</cite></blockquote>
+    </div>
+    <p class="note reveal">Real reviews of popular grip socks sold in India. We built Tyvo to fix each one.</p>
+  </div>
+</section>
+
+<section class="sock" id="sock">
+  <div class="wrap">
+    <h2 class="reveal">One sock, made properly.</h2>
+    <div class="bento">
+      <div class="cell c1 reveal">
+        <i class="ph-bold ph-footprints"></i>
+        <h3>Grip on both sides.</h3>
+        <p>A moulded silicone sole holds the reformer. A second grip inside the heel and toe stops your foot sliding in the sock.</p>
+      </div>
+      <div class="cell c2 reveal">
+        <i class="ph-bold ph-stack"></i>
+        <h3>Reinforced heel and toe</h3>
+        <p>Where cheap socks go thin first.</p>
+      </div>
+      <div class="cell c3 reveal">
+        <img src="https://images.pexels.com/photos/18499500/pexels-photo-18499500/free-photo-of-a-modern-fitness-studio.png?auto=compress&cs=tinysrgb&w=900" alt="A quiet Pilates studio lined with wooden reformers" loading="lazy">
+      </div>
+      <div class="cell c4 reveal">
+        <div class="swatches" role="group" aria-label="Colourways">
+          <button style="background:var(--chalk)" aria-pressed="true" data-name="Chalk" aria-label="Chalk"></button>
+          <button style="background:var(--sage)" aria-pressed="false" data-name="Sage" aria-label="Sage"></button>
+          <button style="background:var(--mocha)" aria-pressed="false" data-name="Mocha" aria-label="Mocha"></button>
+          <button style="background:var(--blush)" aria-pressed="false" data-name="Blush" aria-label="Blush"></button>
+          <button style="background:var(--black)" aria-pressed="false" data-name="Black" aria-label="Black"></button>
+        </div>
+        <h3>Five colourways. <span class="swatch-name" id="swatchName">Chalk</span></h3>
+        <p>Neutrals that go with everything, plus a limited colour each month.</p>
+      </div>
+      <div class="cell c5 reveal">
+        <i class="ph-bold ph-ruler"></i>
+        <h3>Three real sizes</h3>
+        <p>S fits UK 3 to 5, M fits UK 5 to 7, L fits UK 7 to 10. The cuff holds without digging in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guarantee">
+  <div class="wrap">
+    <div class="big90 reveal" aria-hidden="true">90</div>
+    <div class="reveal">
+      <h2>If the grip fades in 90 days, we replace the pair.</h2>
+      <p>Send us a photo of the sole. That's the whole process. We test every batch with 20 machine washes before it ships, so we're comfortable making the promise.</p>
+    </div>
+  </div>
+</section>
+
+<section class="buy" id="buy">
+  <div class="wrap">
+    <h2 class="reveal">Find your size.</h2>
+    <div class="buy-grid">
+      <div class="sizer reveal">
+        <h3>Size finder</h3>
+        <label for="uk">Your UK shoe size</label>
+        <select id="uk">
+          <option value="">Choose a size</option>
+          <option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+        </select>
+        <p class="help">Between sizes? Go up for a looser cuff, down for a snug fit.</p>
+        <div class="result" id="sizeResult" aria-live="polite"></div>
+      </div>
+      <div class="plans reveal">
+        <div class="plan main">
+          <div>
+            <span class="tag">Most popular</span>
+            <h3>3-pack</h3>
+            <p>Three pairs, any colours. Enough for a week of classes.</p>
+          </div>
+          <div class="price">₹1,099</div>
+        </div>
+        <div class="plan">
+          <h3>Single pair</h3>
+          <div class="price">₹449</div>
+          <p>Try one first.</p>
+        </div>
+        <div class="plan">
+          <h3>5-pack</h3>
+          <div class="price">₹1,699</div>
+          <p>For the every-day crowd.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="studios" id="studios">
+  <div class="wrap">
+    <figure class="reveal">
+      <img src="https://images.pexels.com/photos/8769163/pexels-photo-8769163.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Three women in a reformer Pilates class" loading="lazy">
+    </figure>
+    <div class="reveal">
+      <h2>Your studio's logo, on a sock clients reorder.</h2>
+      <p class="lead" style="margin-top:1.2rem">We make custom-branded grip socks for Pilates, barre and yoga studios. Sell them at the front desk and keep the margin.</p>
+      <div class="nums">
+        <div><strong>₹199</strong><span>per pair at 100+</span></div>
+        <div><strong>₹229</strong><span>per pair at 50 to 99</span></div>
+        <div><strong>3 weeks</strong><span>to your door</span></div>
+      </div>
+      <a class="btn btn-primary" id="studioBtn" href="#join">Request a studio sample <i class="ph-bold ph-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="join" id="join">
+  <div class="wrap">
+    <div class="join-box">
+      <div class="reveal">
+        <h2>The founding batch.</h2>
+        <p class="lead" style="margin-top:1.2rem">The first 200 pairs ship in numbered packs at founding prices. Join the list and we'll message you the day it opens. No spam, one launch message.</p>
+      </div>
+      <form id="joinForm" class="reveal" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <div class="row">
+          <div>
+            <label for="city">City</label>
+            <input id="city" name="city" autocomplete="address-level2">
+          </div>
+          <div>
+            <label for="type">I am</label>
+            <select id="type" name="type">
+              <option>Someone who does Pilates</option>
+              <option>A studio owner or instructor</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Join the founding batch</button>
+        <p class="msg" id="joinMsg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2 class="reveal" style="margin-bottom:1.5rem">Questions</h2>
+    <details><summary>When do the socks ship? <i class="ph-bold ph-plus"></i></summary><p>We're testing samples from our manufacturers right now. The founding batch opens once a sample passes our 20-wash test, and ships about three weeks after that. Waitlist members hear first.</p></details>
+    <details><summary>Why do I need grip socks for reformer Pilates? <i class="ph-bold ph-plus"></i></summary><p>The reformer carriage moves and the footbar is smooth. Grip socks stop you slipping and keep the equipment hygienic, which is why many studios ask you to wear them.</p></details>
+    <details><summary>How does the Grip Guarantee work? <i class="ph-bold ph-plus"></i></summary><p>If the grip wears away in normal use within 90 days of delivery, send a photo of the sole and your order number. We send a replacement pair free.</p></details>
+    <details><summary>How should I wash them? <i class="ph-bold ph-plus"></i></summary><p>Inside out, cold wash, no bleach, air dry. Skip the dryer, because heat is what peels grip off most socks.</p></details>
+    <details><summary>Do you ship outside India? <i class="ph-bold ph-plus"></i></summary><p>Not yet. India first. Join the list and tell us your country if you'd like us to ship to you.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Tyvo, India. Grip socks for people who move.</span>
+    <span><a href="#" id="igLink">Instagram</a> &nbsp; <a href="#faq">Returns &amp; guarantee</a></span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+(() => {
+  const C = window.TYVO || {};
+  // reveal on scroll (IntersectionObserver, no scroll listeners)
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // colourway swatches
+  const name = document.getElementById('swatchName');
+  document.querySelectorAll('.swatches button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.swatches button').forEach(x => x.setAttribute('aria-pressed', 'false'));
+    b.setAttribute('aria-pressed', 'true'); name.textContent = b.dataset.name;
+  }));
+
+  // size finder
+  const out = document.getElementById('sizeResult');
+  document.getElementById('uk').addEventListener('change', e => {
+    const v = +e.target.value;
+    if (!v) { out.innerHTML = ''; return; }
+    // UK 5 and 7 sit on a boundary: lower size is snug, upper size is relaxed
+    const edges = { 5: ['S', 'M'], 7: ['M', 'L'] };
+    if (edges[v]) {
+      const [snug, relaxed] = edges[v];
+      out.innerHTML = `${snug} or ${relaxed}<small>UK ${v} sits between two sizes. Take ${snug} for a snug fit or ${relaxed} for a relaxed one.</small>`;
+      return;
+    }
+    const s = v <= 4 ? 'S' : v === 6 ? 'M' : 'L';
+    out.innerHTML = `Size ${s}<small>Fits UK ${s === 'S' ? '3 to 5' : s === 'M' ? '5 to 7' : '7 to 10'}.</small>`;
+  });
+
+  // studio button preselects the studio option
+  document.getElementById('studioBtn').addEventListener('click', () => { document.getElementById('type').selectedIndex = 1; });
+  const ig = document.getElementById('igLink');
+  if (C.INSTAGRAM) ig.href = C.INSTAGRAM; else ig.hidden = true;
+
+  // waitlist form
+  const f = document.getElementById('joinForm'), msg = document.getElementById('joinMsg');
+  f.addEventListener('submit', async ev => {
+    ev.preventDefault();
+    msg.className = 'msg';
+    const d = Object.fromEntries(new FormData(f));
+    if (!d.name.trim() || !/^\S+@\S+\.\S+$/.test(d.email)) { msg.textContent = 'Please add your name and a valid email.'; msg.classList.add('err'); return; }
+    const btn = f.querySelector('button'); btn.disabled = true; btn.textContent = 'Sending...';
+    try {
+      if (!C.EMAIL) throw new Error('no-endpoint');
+      const r = await fetch(`https://formsubmit.co/ajax/${C.EMAIL}`, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ ...d, _subject: `Tyvo waitlist: ${d.type}` }) });
+      if (!r.ok) throw new Error('send');
+      f.reset(); msg.textContent = "You're on the list. We'll message you the day the founding batch opens.";
+    } catch (e) {
+      if (e.message === 'no-endpoint') { msg.textContent = "Sign-ups open in a few days. Follow us on Instagram to hear first."; }
+      else { msg.textContent = 'That did not go through. Please try again in a minute.'; msg.classList.add('err'); }
+    } finally { btn.disabled = false; btn.textContent = 'Join the founding batch'; }
+  });
+})();
+</script>
+</body>
+</html>
